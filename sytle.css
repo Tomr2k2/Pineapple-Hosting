@@ -1,0 +1,129 @@
+:root {
+  --primary: #ffc107;
+  --accent: #ff5722;
+  --bg: #1e1e2f;
+  --text: #fefefe;
+  --card: #2c2c3f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: #111;
+  padding: 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--text);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.plan {
+  background-color: var(--card);
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h3 {
+  margin: 0;
+  font-size: 1.8em;
+  color: var(--primary);
+}
+
+.price {
+  font-size: 2em;
+  margin: 15px 0;
+  color: var(--accent);
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.plan ul li {
+  margin: 10px 0;
+}
+
+.plan a button {
+  background-color: var(--primary);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.plan a button:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #111;
+  color: var(--text);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
