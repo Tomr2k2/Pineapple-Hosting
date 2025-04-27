@@ -1,106 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pineapple MC Hosting 🍍</title>
-  <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white; /* Ensure the iframe has a white background */
+        }
+    </style>
 </head>
 <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pineapple MC Hosting 🍍</title>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#plans">Plans</a>
-    <a href="https://discord.gg/8KtWEz4W" target="_blank">Discord</a>
-    <a href="#">Contact</a>
-    <a href="login.html" class="login-btn">Login</a>
-  </nav>
+        <!-- Google font & stylesheet -->
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
 
-  <header>
-    <h1>Pineapple Hosting 🍍</h1>
-    <p>Reliable. Cheap & Fast Minecraft Server Hosting</p>
-  </header>
+        <!-- ────────── Navigation ────────── -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#plans">Plans</a></li>
+                <li><a href="https://discord.gg/8KtWEz4W" target="_blank">Discord</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
 
-  <!-- Stats Section (Achievements) -->
-  <section id="stats" class="stats">
-    <h2>Our Achievements</h2>
-    <div class="stat">
-      <h3>1,000</h3>
-      <p>Servers Hosted</p>
-    </div>
-    <div class="stat">
-      <h3>275</h3>
-      <p>Active Players</p>
-    </div>    
-    <div class="stat">
-      <h3>50,000</h3>
-      <p>Signups</p>
-    </div>
-  </section>
+        <!-- ────────── Hero ────────── -->
+        <header>
+            <h1 data-animate>Pineapple Hosting 🍍</h1>
+            <p data-animate>Reliable • Fast • Affordable Minecraft servers for everyone.</p>
+            <p style="font-size: 0.75rem;">Find Our Terms Of Services At The Bottom Of The Page Or Here <a href="tos.html">ToS</a></p>
 
-  <!-- Bonuses Panel (Why Choose Us) -->
-  <section id="bonuses" class="bonuses">
-    <h2>Why Choose Us?</h2>
-    <div class="bonus">
-      <img src="icons/uptime.png" alt="Uptime" />
-      <h3>24/7 Uptime</h3>
-      <p>We Strive For 99.9% Uptime.</p>
-    </div>
-    <div class="bonus">
-      <img src="icons/crossplay.png" alt="Crossplay" />
-      <h3>Effortless Crossplay</h3>
-      <p>Play with your friends across platforms easily.</p>
-    </div>
-    <div class="bonus">
-      <img src="icons/money.png" alt="Competitive Pricing" />
-      <h3>Competitive Pricing</h3>
-      <p>Affordable plans that suit all needs and budgets.</p>
-    </div>
-    <div class="bonus">
-      <img src="icons/shield.png" alt="DDoS Protection" />
-      <h3>DDoS Protection</h3>
-      <p>Your server is protected against attacks.</p>
-    </div>
-  </section>
+            <!-- Only change here: give the wrapper link an id -->
+            <a href="#plans" id="get-started">
+                <button class="cta-btn" data-animate>Get Started</button>
+            </a>
 
-  <!-- Plans Section -->
-  <section id="plans" class="plans">
-    <div class="plan">
-      <h3>4 GB RAM</h3>
-      <p class="price">$4.99/mo</p>
-      <ul>
-        <li>Up to 20 Players</li>
-        <li>Basic Support</li>
-        <li>1 Backup Included</li>
-        <li>10Gb SSD Storage</li>
-        <li>DDoS Protection</li>
-        <li>Always High Uptime</li>
-      </ul>
-      <a href="plan-details.html?plan=4gb"><button>Choose Plan</button></a>
-    </div>
+        </header>
 
-    <div class="plan">
-      <h3>8 GB RAM</h3>
-      <p class="price">$8.99/mo</p>
-      <ul>
-        <li>Up to 40 Players</li>
-        <li>Priority Support</li>
-        <li>2 Backups Included</li>
-        <li>20Gb SSD Storage</li>
-        <li>DDoS Protection</li>
-        <li>Always High Uptime</li>
-      </ul>
-      <a href="plan-details.html?plan=8gb"><button>Choose Plan</button></a>
-    </div>
-  </section>
+        <!-- ────────── Stats ────────── -->
+        <section id="stats">
+            <h2>Our Achievements</h2>
+            <div class="stats-grid">
+                <div class="stat" data-animate><h3 data-count="1000">0</h3><p>Servers Hosted</p></div>
+                <div class="stat" data-animate><h3 data-count="275">0</h3><p>Active Players</p></div>
+                <div class="stat" data-animate><h3 data-count="50000">0</h3><p>Sign-ups</p></div>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 Pineapple Hosting - All Rights Reserved 🍍</p>
-    <p>
-      Need help? Join our 
-      <a href="https://discord.gg/8KtWEz4W" target="_blank" style="color: var(--primary); text-decoration: underline;">Discord</a>
-    </p>
-  </footer>
+        <!-- ────────── Why Choose Us ────────── -->
+        <section id="bonuses">
+            <h2>Why Choose Us?</h2>
+            <div class="bonuses-grid">
+                <div class="bonus" data-animate>
+                    <img src="https://img.icons8.com/?size=100&id=tzP6CA2JQBhL&format=png&color=FFFFFF" alt="Uptime">
+                    <h3>24/7 Uptime</h3><p>99.9% server availability guaranteed.</p>
+                </div>
+                <div class="bonus" data-animate>
+                    <img src="https://img.icons8.com/fluency-systems-regular/96/ffffff/console.png" alt="Crossplay">
+                    <h3>Effortless Crossplay</h3><p>Bedrock & Java players together.</p>
+                </div>
+                <div class="bonus" data-animate>
+                    <img src="https://img.icons8.com/?size=100&id=21448&format=png&color=FFFFFF" alt="Pricing">
+                    <h3>Competitive Pricing</h3><p>Plans from as low as $4.99.</p>
+                </div>
+                <div class="bonus" data-animate>
+                    <img src="https://img.icons8.com/?size=100&id=hFYE8z1ZdaC6&format=png&color=FFFFFF" alt="DDoS">
+                    <h3>DDoS Protection</h3><p>Enterprise-grade security.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- ────────── Plans ────────── -->
+        <section id="plans">
+          <h2>Choose Your Plan</h2>
+
+          <div class="plans-grid">
+              <!-- 4 GB PLAN -->
+              <div class="plan" data-animate>
+                  <h3>4&nbsp;GB RAM</h3>
+                  <p class="price">$9.99<span style="font-size:.6em">/mo</span></p>
+
+                  <ul>
+                      <li><img src="https://img.icons8.com/?size=100&id=4jVOnszvktAk&format=png&color=FFFFFF" alt="Players">Up to 20 Players</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=11227&format=png&color=FFFFFF" alt="Support">Basic Support</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=74107&format=png&color=FFFFFF" alt="Backup">1 Backup Included</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=184&format=png&color=FFFFFF" alt="Storage">10&nbsp;GB SSD Storage</li>
+                  </ul>
+              </div>
+
+              <!-- 8 GB PLAN -->
+              <div class="plan" data-animate>
+                  <h3>8&nbsp;GB RAM</h3>
+                  <p class="price">$14.99<span style="font-size:.6em">/mo</span></p>
+
+                  <ul>
+                      <li><img src="https://img.icons8.com/?size=100&id=4jVOnszvktAk&format=png&color=FFFFFF" alt="Players">Up to 40 Players</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=11227&format=png&color=FFFFFF" alt="Support">Fast Support</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=74107&format=png&color=FFFFFF" alt="Backup">2 Backups Included</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=184&format=png&color=FFFFFF" alt="Storage">20&nbsp;GB SSD Storage</li>
+                  </ul>
+              </div>
+
+              <!-- 16 GB PLAN -->
+              <div class="plan" data-animate>
+                  <h3>16&nbsp;GB RAM</h3>
+                  <p class="price">$24.99<span style="font-size:.6em">/mo</span></p>
+
+                  <ul>
+                      <li><img src="https://img.icons8.com/?size=100&id=4jVOnszvktAk&format=png&color=FFFFFF" alt="Players">Unlimited Players</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=11227&format=png&color=FFFFFF" alt="Support">Priority Support</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=74107&format=png&color=FFFFFF" alt="Backup">5 Backups Included</li>
+                      <li><img src="https://img.icons8.com/?size=100&id=184&format=png&color=FFFFFF" alt="Storage">50&nbsp;GB SSD Storage</li>
+                  </ul>
+              </div>
+          </div>
+        </section>
+
+        <!-- ────────── Footer ────────── -->
+        <footer id="contact">
+            <p>© 2025 – <strong>Pineapple Hosting</strong> 🍍   |  All Rights Reserved</p>
+            <p>Need help? Join our <a href="https://discord.gg/8KtWEz4W" target="_blank">Discord Community</a></p>
+            <p>Our Terms Of Service <a href="tos.html">ToS</a></p>
+        </footer>
+
+        <!-- ────────── Scripts ────────── -->
+        <script>
+            /* Fade-in on scroll */
+            const revealObserver = new IntersectionObserver(entries=>{
+                entries.forEach(entry=>{
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('show');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            },{threshold:.15});
+            document.querySelectorAll('[data-animate], section').forEach(el=>revealObserver.observe(el));
+
+            /* Count-up for stats */
+            const countObserver = new IntersectionObserver(entries=>{
+                entries.forEach(entry=>{
+                    if(entry.isIntersecting){
+                        const el  = entry.target,
+                              end = +el.dataset.count,
+                              duration = 1400;
+                        const step = t=>{
+                            if(!el._start) el._start = t;
+                            const p = Math.min((t - el._start) / duration, 1);
+                            el.textContent = Math.floor(p * end).toLocaleString();
+                            if(p < 1) requestAnimationFrame(step);
+                        };
+                        requestAnimationFrame(step);
+                        countObserver.unobserve(el);
+                    }
+                });
+            },{threshold:1});
+            document.querySelectorAll('[data-count]').forEach(el=>countObserver.observe(el));
+
+            /* Smooth-slide to #plans accounting for sticky nav height */
+            document.getElementById('get-started').addEventListener('click', e=>{
+                e.preventDefault();                    // stop the default instant jump
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetY   = document.getElementById('plans').getBoundingClientRect().top
+                    + window.scrollY - navHeight;
+
+                window.scrollTo({top: targetY, behavior: 'smooth'});
+            });
+        </script>
+    </body>
+    </html>
+
+    <script>
+
+        /* Smooth-slide to #plans accounting for sticky nav height */
+        document.getElementById('get-started').addEventListener('click', e=>{
+            e.preventDefault();                    // stop the default instant jump
+            const navHeight = document.querySelector('nav').offsetHeight;
+            const targetY   = document.getElementById('plans').getBoundingClientRect().top
+                + window.scrollY - navHeight;
+
+            window.scrollTo({top: targetY, behavior: 'smooth'});
+        });
+    </script>
 </body>
 </html>
