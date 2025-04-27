@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #2c2c3f);
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .auth-container {
+    background: #2c2c3f;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #ffc107;
+    font-size: 18px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+  
+  input {
+    background: #393953;
+    border: none;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  p a {
+    color: #ffc107;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Back to Home link */
+  .back-home {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .back-home:hover {
+    color: #ff5722;
+  }
+  
