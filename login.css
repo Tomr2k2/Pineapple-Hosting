@@ -33,7 +33,7 @@ body{
 .auth-container::before{
   content:''; position:absolute; inset:-2px; border-radius:inherit; padding:2px;
   background:conic-gradient(var(--primary) 0%,var(--accent) 33%,var(--primary) 66%,var(--primary) 100%);
-  animation:spin 8s linear infinite;
+  animation:spin 10s linear infinite;
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
   -webkit-mask-composite:xor; mask-composite:exclude;  /* hollow centre */
 }
